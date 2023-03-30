@@ -1,8 +1,13 @@
+import Header from "./components/Header"
 import React from 'react'
 
 function App() {
   return (
-    <div>App</div>
+    <>
+      <Header />
+      <div>App</div>
+    </>
+   
   )
 }
 
