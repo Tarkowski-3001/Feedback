@@ -6,6 +6,7 @@ import FeedbackData from "./data/FeedbackData"
 import FeedbackStats from "./components/FeedbackStats"
 import FeedbackForm from "./components/FeedbackForm"
 import AboutPage from './components/pages/AboutPage'
+import AboutIcon from './components/AboutIcon'
 import {useState} from 'react'
 
 function App() {
@@ -38,13 +39,10 @@ function App() {
           } />
 
           <Route path="/about" element={<AboutPage />} />
-
-          
         </Routes>
         
-      </div>
-
-      
+        <AboutIcon />
+      </div>      
     </Router>
    
   )
