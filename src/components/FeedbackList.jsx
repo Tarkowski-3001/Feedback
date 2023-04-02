@@ -12,7 +12,7 @@ function FeedbackList({feedback, handleDelete}) {
         <AnimatePresence>
             <div className="feedback-list">
                 {feedback.map((item) => (
-                    <motion.div key={item.id} initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
+                    <motion.div key={item.id} initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0n}}>
                         <FeedbackItem key = {item.id}  item={item} handleClick={handleDelete}/>
                     </motion.div>
                     
